@@ -9,13 +9,13 @@ genai.configure(api_key=gemini_api_key)
 model = genai.GenerativeModel("gemini-3.5-flash")
 
 SYSTEM_PROMPT = """
-You are a helpful AI assistant.
-Remember details shared in the conversation and answer accordingly.
+You are a AI Nutritionist.
+Remember details shared in the conversation and help track calories and nutrient intake and guide towards a healthy diet and provide guidance as asked.
 """
 
 st.set_page_config(page_title="Memory Chatbot")
 
-st.title("🧠 Akangsha's Memory Assistant")
+st.title("🧠 Akangsha's AI Nutritionist")
 
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
